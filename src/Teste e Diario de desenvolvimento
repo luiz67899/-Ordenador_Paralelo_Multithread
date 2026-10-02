@@ -1,0 +1,23 @@
+Testes
+
+Testamos com 1B de linha e tivemos erro mesmo com o limite de maior valor ser maior que 1B, com 1M foi seguro e
+funcional.
+Foi testado com 1000 elementos, sendo que o algoritmo sequencial mais rapido que o paralelo.
+Já com 200000 elementos, o tempo paralelo foi menor. Fizemos uma pesquisa e descobrimos que para criar objetos Thread,
+existe um tempo fixo para alocar memória para os pedaços, fazer a troca de contexto no sistema operacional e
+gerenciar o join(), logo, a partir de uma grande quantidade de elementos que vemos o ganho de cria-se threads
+versus não paralelismo.
+
+
+
+Luiz
+Minha função no projeto foi estruturar a classe Programa (main) e desenvolver a classe Misturadora. Começei substituindo
+o método scanner pelo teclado da proposta inicial, na classe Misturadora, criei a lógica de intercalação em threads sepa-
+radas para unir dois pedaços de vetor ordenados em um único bloco. Na main, . Quando o número de pedaços da rodada era
+ímpar, o programa apresentava erros de índice ou travava; resolvi isso isolando o último pedaço sem par para que avançasse
+direto para a etapa seguinte.
+
+Nicolas
+Fiquei responsável por desenvolver a classe Ordenadora e a lógica de comparação sequencial. Na Ordenadora, adaptei o
+algoritmo de QuickSort para trabalhar com o tipo primitivo byte[] dentro de threads individuais, adicionando a contagem
+de tempo de execução interna e disponibilizando o pedaço ordenado através do método getVetor().
