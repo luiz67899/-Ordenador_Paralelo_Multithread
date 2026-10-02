@@ -102,4 +102,4 @@ A eficiência do paralelismo depende do **tamanho do vetor**:
 ### Passos
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+   git clone git@github.com:luiz67899/-Ordenador_Paralelo_Multithread.git
